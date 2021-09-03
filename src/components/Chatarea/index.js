@@ -99,7 +99,9 @@ const Chatarea = (props) => {
       <div
         className="row position-relative flex-grow-1 flex-shrink-1 border-start border-2 flex-basis-0  "
         style={{
-          backgroundImage: "url(/images/desktop.jpg)",
+          backgroundImage: `url(
+          "  https://firebasestorage.googleapis.com/v0/b/talkify-54db0.appspot.com/o/images%2FDesktop.jpg?alt=media&token=167f0480-bf55-484c-8d05-fe768b54f079"
+          )`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
