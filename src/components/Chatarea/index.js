@@ -99,7 +99,7 @@ const Chatarea = (props) => {
       <div
         className="row position-relative flex-grow-1 flex-shrink-1 border-start border-2 flex-basis-0  "
         style={{
-          backgroundImage: "url(/images/desktop.png)",
+          backgroundImage: "url(/images/desktop.jpg)",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
