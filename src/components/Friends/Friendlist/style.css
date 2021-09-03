@@ -1,0 +1,27 @@
+.bs {
+  box-sizing: border-box;
+}
+.flex-basis-0 {
+  flex-basis: 0px;
+}
+.flex-basis-auto {
+  flex-basis: auto;
+}
+.z-index-100 {
+  z-index: 100;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+.mh-62 {
+  min-height: 62px;
+}
+.flex-none {
+  flex: none;
+}
+.hidesb::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}

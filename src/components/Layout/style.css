@@ -1,0 +1,23 @@
+.w-30 {
+  width: 30% !important;
+}
+.bg-dblue {
+  background-color: #13293d;
+}
+
+.bg-lblue {
+  background-color: #2a628f;
+}
+
+.rounded-5 {
+  border-radius: 1rem !important;
+}
+.lh {
+  line-height: 0.1em;
+}
+.lsp {
+  letter-spacing: 15px;
+}
+.hidesb::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}

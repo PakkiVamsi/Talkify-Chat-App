@@ -1,0 +1,55 @@
+.lsp {
+  letter-spacing: 15px;
+}
+
+.bg-default {
+  background-color: #13293d;
+}
+.pt {
+  cursor: pointer;
+}
+.img {
+  background-image: url("https://www.pngrepo.com/png/74681/512/add-user.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.img:hover {
+  background-color: white;
+}
+
+.bg-box {
+  background: hsla(224, 25%, 54%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(224, 25%, 54%, 1) 0%,
+    hsla(225, 22%, 46%, 1) 25%,
+    hsla(225, 23%, 38%, 1) 50%,
+    hsla(225, 25%, 30%, 1) 75%,
+    hsla(225, 29%, 22%, 1) 100%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(224, 25%, 54%, 1) 0%,
+    hsla(225, 22%, 46%, 1) 25%,
+    hsla(225, 23%, 38%, 1) 50%,
+    hsla(225, 25%, 30%, 1) 75%,
+    hsla(225, 29%, 22%, 1) 100%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(224, 25%, 54%, 1) 0%,
+    hsla(225, 22%, 46%, 1) 25%,
+    hsla(225, 23%, 38%, 1) 50%,
+    hsla(225, 25%, 30%, 1) 75%,
+    hsla(225, 29%, 22%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6d7ca7", endColorstr="#5c698f", GradientType=1 );
+}

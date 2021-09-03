@@ -1,0 +1,31 @@
+.bs {
+  box-sizing: border-box;
+}
+.h-72 {
+  height: 72px;
+}
+.w-72 {
+  width: 72px;
+}
+.hinherit {
+  height: 50px;
+  width: 50px;
+}
+.ms-20 {
+  margin-left: -20px;
+}
+.w-40 {
+  width: 40%;
+}
+.harrow::after {
+  content: none;
+}
+.harrow:hover {
+  background-color: #13293d;
+}
+.select-none {
+  user-select: none;
+}
+.pointer {
+  cursor: pointer;
+}

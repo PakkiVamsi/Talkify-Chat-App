@@ -1,0 +1,15 @@
+.badge1 {
+  max-width: 60%;
+  line-height: 1.3;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+.text-white {
+  color: white;
+}
+.text-b {
+  color: black;
+}

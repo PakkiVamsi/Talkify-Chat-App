@@ -1,0 +1,21 @@
+.bg-dblue {
+  background-color: #13293d;
+}
+
+.bg-lblue {
+  background-color: #2a628f;
+}
+
+.text-dblue {
+  color: #13293d;
+}
+
+.text-lblue {
+  color: #2a628f;
+}
+.select-none {
+  user-select: none;
+}
+.pointer {
+  cursor: pointer;
+}

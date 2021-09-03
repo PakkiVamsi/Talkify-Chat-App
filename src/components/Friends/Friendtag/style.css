@@ -1,0 +1,16 @@
+.h-72 {
+  height: 72px;
+  margin-left: 0;
+}
+.w-72 {
+  width: 72px;
+}
+.hv:hover {
+  background-color: gray;
+}
+.select-none {
+  user-select: none;
+}
+.pointer {
+  cursor: pointer;
+}
