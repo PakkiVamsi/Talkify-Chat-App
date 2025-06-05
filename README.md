@@ -2,6 +2,10 @@
 
 Here is the link to talkify App - https://talkify-54db0.web.app/
 
+## Features
+
+- **Disappearing Messages**: Chat messages are automatically removed 24 hours after they are sent or when the sender logs out.
+
 
 
 # Getting Started with Create React App
