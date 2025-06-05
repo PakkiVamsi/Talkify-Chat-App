@@ -1,5 +1,6 @@
 import firebase from "firebase";
 import { authConstant } from "./constants";
+import { deleteUserMessages } from "./user.actions";
 import { NavLink, Link, Redirect } from "react-router-dom";
 
 export const signup = (user) => {
@@ -302,6 +303,7 @@ export const logout = (username) => {
       .doc(username)
       .update({ isOnline: false, lastseen: d })
       .then(() => {
+        dispatch(deleteUserMessages(username));
         firebase
           .auth()
           .signOut()

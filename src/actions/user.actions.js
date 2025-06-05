@@ -236,14 +236,26 @@ export const getrealtimeConversations = (sender, receiver, chatid) => {
   return async (dispatch) => {
     console.log(chatid);
 
-    const db = firebase.firestore();
-    const unsubscribe = db
-      .collection("conversations")
-      .doc(chatid)
-      .onSnapshot((doc) => {
-        console.log(chatid);
-
-        const messages = [...doc.data().messages];
+  const db = firebase.firestore();
+  const unsubscribe = db
+    .collection("conversations")
+    .doc(chatid)
+    .onSnapshot((doc) => {
+      console.log(chatid);
+      let messages = [...doc.data().messages];
+      const now = new Date();
+      const filteredMessages = messages.filter((msg) => {
+        const sent = msg.time.sentTime.toDate
+          ? msg.time.sentTime.toDate()
+          : new Date(msg.time.sentTime);
+        return now - sent <= 24 * 60 * 60 * 1000;
+      });
+      if (filteredMessages.length !== messages.length) {
+        db.collection("conversations").doc(chatid).update({
+          messages: filteredMessages,
+        });
+      }
+      messages = filteredMessages;
         // console.log(sender, receiver);
         if (
           messages.length != 0 &&
@@ -263,5 +275,23 @@ export const getrealtimeConversations = (sender, receiver, chatid) => {
         });
       });
     return unsubscribe;
+  };
+};
+
+export const deleteUserMessages = (username) => {
+  return async (dispatch) => {
+    const db = firebase.firestore();
+    const convRef = db.collection("conversations");
+    convRef.get().then((snapshot) => {
+      snapshot.docs.forEach((doc) => {
+        const messages = doc.data().messages || [];
+        const filtered = messages.filter(
+          (msg) => msg.sender !== username && msg.receiver !== username
+        );
+        if (filtered.length !== messages.length) {
+          convRef.doc(doc.id).update({ messages: filtered });
+        }
+      });
+    });
   };
 };
